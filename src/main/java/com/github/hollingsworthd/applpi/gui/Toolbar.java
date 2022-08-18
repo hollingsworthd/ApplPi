@@ -40,14 +40,16 @@ import javax.swing.JToolBar;
 import javax.swing.SpinnerNumberModel;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
+import main.java.com.github.hollingsworthd.applpi.composition.MiniWheats;
 
 public class Toolbar extends JToolBar {
 
-  private static final double DEFAULT_ROOT = 440;
+  private static final double DEFAULT_ROOT = Math.pow(2, 5. / 12.) * 440;
   private static double root = DEFAULT_ROOT / 16;
   JFrame mainFrame;
   JLabel label;
-  private Composition[] compositions = new Composition[]{new LuckyCharms(),
+  private Composition[] compositions = new Composition[]{
+      new MiniWheats(), new LuckyCharms(),
       new FruitLoops(), new FrostedFlakes(), new CookieCrisp(),
       new ToastCrunch(), new SummerAle(), new Newcastle(),
       new Guinness(), new ChocolateStout(), new BlueMoon(),

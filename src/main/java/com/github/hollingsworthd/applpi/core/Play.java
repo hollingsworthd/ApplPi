@@ -26,7 +26,7 @@ public class Play extends UnitGenerator implements Runnable {
 
   private static final double SAMP_SIZE = 2.;
   private static final double BITS_PER_BYTE = 8.;
-  private static final double GAIN = 2;
+  private static final double GAIN = 3;
   private static final double MAX =
       ((Math.rint(Math.pow(2., SAMP_SIZE * BITS_PER_BYTE - 1))) - 1.) * GAIN;
   private static final double MIN =
